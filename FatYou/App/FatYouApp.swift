@@ -11,7 +11,7 @@ import SwiftUI
 struct FatYouApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainFlow()
         }
     }
 }
