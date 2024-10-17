@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049F16362CC0E7930011414A /* FatYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F16352CC0E7930011414A /* FatYouApp.swift */; };
+		049F16382CC0E7930011414A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F16372CC0E7930011414A /* ContentView.swift */; };
+		049F163A2CC0E7950011414A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049F16392CC0E7950011414A /* Assets.xcassets */; };
+		049F163D2CC0E7950011414A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049F163C2CC0E7950011414A /* Preview Assets.xcassets */; };
+		049F164C2CC0EA2D0011414A /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16472CC0EA2D0011414A /* Ubuntu-Bold.ttf */; };
+		049F164D2CC0EA2D0011414A /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16482CC0EA2D0011414A /* Ubuntu-BoldItalic.ttf */; };
+		049F164E2CC0EA2D0011414A /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16492CC0EA2D0011414A /* Ubuntu-Italic.ttf */; };
+		049F164F2CC0EA2D0011414A /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F164A2CC0EA2D0011414A /* Ubuntu-Regular.ttf */; };
+		049F16662CC0EB250011414A /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16512CC0EB250011414A /* Roboto-Black.ttf */; };
+		049F16672CC0EB250011414A /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16522CC0EB250011414A /* Roboto-BlackItalic.ttf */; };
+		049F16682CC0EB250011414A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16532CC0EB250011414A /* Roboto-Bold.ttf */; };
+		049F16692CC0EB250011414A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16542CC0EB250011414A /* Roboto-BoldItalic.ttf */; };
+		049F166A2CC0EB250011414A /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16552CC0EB250011414A /* Roboto-Italic.ttf */; };
+		049F166B2CC0EB250011414A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16562CC0EB250011414A /* Roboto-Light.ttf */; };
+		049F166C2CC0EB250011414A /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16572CC0EB250011414A /* Roboto-LightItalic.ttf */; };
+		049F166D2CC0EB250011414A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16582CC0EB250011414A /* Roboto-Medium.ttf */; };
+		049F166E2CC0EB250011414A /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16592CC0EB250011414A /* Roboto-MediumItalic.ttf */; };
+		049F166F2CC0EB250011414A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F165A2CC0EB250011414A /* Roboto-Regular.ttf */; };
+		049F16702CC0EB250011414A /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F165B2CC0EB250011414A /* Roboto-Thin.ttf */; };
+		049F16712CC0EB250011414A /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F165C2CC0EB250011414A /* Roboto-ThinItalic.ttf */; };
+		049F16722CC0EB250011414A /* MPLUSRounded1c-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F165E2CC0EB250011414A /* MPLUSRounded1c-Black.ttf */; };
+		049F16732CC0EB250011414A /* MPLUSRounded1c-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F165F2CC0EB250011414A /* MPLUSRounded1c-Bold.ttf */; };
+		049F16742CC0EB250011414A /* MPLUSRounded1c-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16602CC0EB250011414A /* MPLUSRounded1c-ExtraBold.ttf */; };
+		049F16752CC0EB250011414A /* MPLUSRounded1c-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16612CC0EB250011414A /* MPLUSRounded1c-Light.ttf */; };
+		049F16762CC0EB250011414A /* MPLUSRounded1c-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16622CC0EB250011414A /* MPLUSRounded1c-Medium.ttf */; };
+		049F16772CC0EB250011414A /* MPLUSRounded1c-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16632CC0EB250011414A /* MPLUSRounded1c-Regular.ttf */; };
+		049F16782CC0EB250011414A /* MPLUSRounded1c-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16642CC0EB250011414A /* MPLUSRounded1c-Thin.ttf */; };
+		049F167A2CC0EC640011414A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F16792CC0EC640011414A /* CustomFonts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		049F16322CC0E7930011414A /* FatYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049F16352CC0E7930011414A /* FatYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatYouApp.swift; sourceTree = "<group>"; };
+		049F16372CC0E7930011414A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		049F16392CC0E7950011414A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049F163C2CC0E7950011414A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		049F16472CC0EA2D0011414A /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		049F16482CC0EA2D0011414A /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		049F16492CC0EA2D0011414A /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		049F164A2CC0EA2D0011414A /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		049F16502CC0EAAC0011414A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049F16512CC0EB250011414A /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		049F16522CC0EB250011414A /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		049F16532CC0EB250011414A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		049F16542CC0EB250011414A /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		049F16552CC0EB250011414A /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		049F16562CC0EB250011414A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		049F16572CC0EB250011414A /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		049F16582CC0EB250011414A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		049F16592CC0EB250011414A /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		049F165A2CC0EB250011414A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		049F165B2CC0EB250011414A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		049F165C2CC0EB250011414A /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		049F165E2CC0EB250011414A /* MPLUSRounded1c-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Black.ttf"; sourceTree = "<group>"; };
+		049F165F2CC0EB250011414A /* MPLUSRounded1c-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Bold.ttf"; sourceTree = "<group>"; };
+		049F16602CC0EB250011414A /* MPLUSRounded1c-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-ExtraBold.ttf"; sourceTree = "<group>"; };
+		049F16612CC0EB250011414A /* MPLUSRounded1c-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Light.ttf"; sourceTree = "<group>"; };
+		049F16622CC0EB250011414A /* MPLUSRounded1c-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Medium.ttf"; sourceTree = "<group>"; };
+		049F16632CC0EB250011414A /* MPLUSRounded1c-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Regular.ttf"; sourceTree = "<group>"; };
+		049F16642CC0EB250011414A /* MPLUSRounded1c-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Thin.ttf"; sourceTree = "<group>"; };
+		049F16792CC0EC640011414A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049F162F2CC0E7930011414A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049F16292CC0E7930011414A = {
+			isa = PBXGroup;
+			children = (
+				049F16342CC0E7930011414A /* FatYou */,
+				049F16332CC0E7930011414A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		049F16332CC0E7930011414A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049F16322CC0E7930011414A /* FatYou.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049F16342CC0E7930011414A /* FatYou */ = {
+			isa = PBXGroup;
+			children = (
+				049F16452CC0E8AE0011414A /* App */,
+				049F16442CC0E8A10011414A /* Configuration */,
+				049F16432CC0E8870011414A /* Resources */,
+				049F163B2CC0E7950011414A /* Preview Content */,
+			);
+			path = FatYou;
+			sourceTree = "<group>";
+		};
+		049F163B2CC0E7950011414A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				049F163C2CC0E7950011414A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		049F16432CC0E8870011414A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				049F16462CC0E9F90011414A /* Fonts */,
+				049F16392CC0E7950011414A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		049F16442CC0E8A10011414A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				049F16502CC0EAAC0011414A /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		049F16452CC0E8AE0011414A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				049F16352CC0E7930011414A /* FatYouApp.swift */,
+				049F16372CC0E7930011414A /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		049F16462CC0E9F90011414A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				049F16652CC0EB250011414A /* MPLUSRounded1c */,
+				049F165D2CC0EB250011414A /* Roboto */,
+				049F164B2CC0EA2D0011414A /* Ubuntu */,
+				049F16792CC0EC640011414A /* CustomFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		049F164B2CC0EA2D0011414A /* Ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				049F16472CC0EA2D0011414A /* Ubuntu-Bold.ttf */,
+				049F16482CC0EA2D0011414A /* Ubuntu-BoldItalic.ttf */,
+				049F16492CC0EA2D0011414A /* Ubuntu-Italic.ttf */,
+				049F164A2CC0EA2D0011414A /* Ubuntu-Regular.ttf */,
+			);
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		049F165D2CC0EB250011414A /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				049F16512CC0EB250011414A /* Roboto-Black.ttf */,
+				049F16522CC0EB250011414A /* Roboto-BlackItalic.ttf */,
+				049F16532CC0EB250011414A /* Roboto-Bold.ttf */,
+				049F16542CC0EB250011414A /* Roboto-BoldItalic.ttf */,
+				049F16552CC0EB250011414A /* Roboto-Italic.ttf */,
+				049F16562CC0EB250011414A /* Roboto-Light.ttf */,
+				049F16572CC0EB250011414A /* Roboto-LightItalic.ttf */,
+				049F16582CC0EB250011414A /* Roboto-Medium.ttf */,
+				049F16592CC0EB250011414A /* Roboto-MediumItalic.ttf */,
+				049F165A2CC0EB250011414A /* Roboto-Regular.ttf */,
+				049F165B2CC0EB250011414A /* Roboto-Thin.ttf */,
+				049F165C2CC0EB250011414A /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		049F16652CC0EB250011414A /* MPLUSRounded1c */ = {
+			isa = PBXGroup;
+			children = (
+				049F165E2CC0EB250011414A /* MPLUSRounded1c-Black.ttf */,
+				049F165F2CC0EB250011414A /* MPLUSRounded1c-Bold.ttf */,
+				049F16602CC0EB250011414A /* MPLUSRounded1c-ExtraBold.ttf */,
+				049F16612CC0EB250011414A /* MPLUSRounded1c-Light.ttf */,
+				049F16622CC0EB250011414A /* MPLUSRounded1c-Medium.ttf */,
+				049F16632CC0EB250011414A /* MPLUSRounded1c-Regular.ttf */,
+				049F16642CC0EB250011414A /* MPLUSRounded1c-Thin.ttf */,
+			);
+			path = MPLUSRounded1c;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049F16312CC0E7930011414A /* FatYou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049F16402CC0E7950011414A /* Build configuration list for PBXNativeTarget "FatYou" */;
+			buildPhases = (
+				049F162E2CC0E7930011414A /* Sources */,
+				049F162F2CC0E7930011414A /* Frameworks */,
+				049F16302CC0E7930011414A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FatYou;
+			productName = FatYou;
+			productReference = 049F16322CC0E7930011414A /* FatYou.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		049F162A2CC0E7930011414A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					049F16312CC0E7930011414A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 049F162D2CC0E7930011414A /* Build configuration list for PBXProject "FatYou" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 049F16292CC0E7930011414A;
+			productRefGroup = 049F16332CC0E7930011414A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				049F16312CC0E7930011414A /* FatYou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049F16302CC0E7930011414A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049F164F2CC0EA2D0011414A /* Ubuntu-Regular.ttf in Resources */,
+				049F166E2CC0EB250011414A /* Roboto-MediumItalic.ttf in Resources */,
+				049F16702CC0EB250011414A /* Roboto-Thin.ttf in Resources */,
+				049F16772CC0EB250011414A /* MPLUSRounded1c-Regular.ttf in Resources */,
+				049F166F2CC0EB250011414A /* Roboto-Regular.ttf in Resources */,
+				049F164D2CC0EA2D0011414A /* Ubuntu-BoldItalic.ttf in Resources */,
+				049F166B2CC0EB250011414A /* Roboto-Light.ttf in Resources */,
+				049F16722CC0EB250011414A /* MPLUSRounded1c-Black.ttf in Resources */,
+				049F16712CC0EB250011414A /* Roboto-ThinItalic.ttf in Resources */,
+				049F163D2CC0E7950011414A /* Preview Assets.xcassets in Resources */,
+				049F166C2CC0EB250011414A /* Roboto-LightItalic.ttf in Resources */,
+				049F16762CC0EB250011414A /* MPLUSRounded1c-Medium.ttf in Resources */,
+				049F163A2CC0E7950011414A /* Assets.xcassets in Resources */,
+				049F16732CC0EB250011414A /* MPLUSRounded1c-Bold.ttf in Resources */,
+				049F16662CC0EB250011414A /* Roboto-Black.ttf in Resources */,
+				049F16782CC0EB250011414A /* MPLUSRounded1c-Thin.ttf in Resources */,
+				049F16682CC0EB250011414A /* Roboto-Bold.ttf in Resources */,
+				049F164E2CC0EA2D0011414A /* Ubuntu-Italic.ttf in Resources */,
+				049F164C2CC0EA2D0011414A /* Ubuntu-Bold.ttf in Resources */,
+				049F166D2CC0EB250011414A /* Roboto-Medium.ttf in Resources */,
+				049F16692CC0EB250011414A /* Roboto-BoldItalic.ttf in Resources */,
+				049F166A2CC0EB250011414A /* Roboto-Italic.ttf in Resources */,
+				049F16752CC0EB250011414A /* MPLUSRounded1c-Light.ttf in Resources */,
+				049F16672CC0EB250011414A /* Roboto-BlackItalic.ttf in Resources */,
+				049F16742CC0EB250011414A /* MPLUSRounded1c-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049F162E2CC0E7930011414A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049F167A2CC0EC640011414A /* CustomFonts.swift in Sources */,
+				049F16382CC0E7930011414A /* ContentView.swift in Sources */,
+				049F16362CC0E7930011414A /* FatYouApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		049F163E2CC0E7950011414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		049F163F2CC0E7950011414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		049F16412CC0E7950011414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FatYou/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FatYou/Configuration/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebmoskalev.FatYou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049F16422CC0E7950011414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FatYou/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FatYou/Configuration/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glebmoskalev.FatYou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049F162D2CC0E7930011414A /* Build configuration list for PBXProject "FatYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049F163E2CC0E7950011414A /* Debug */,
+				049F163F2CC0E7950011414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049F16402CC0E7950011414A /* Build configuration list for PBXNativeTarget "FatYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049F16412CC0E7950011414A /* Debug */,
+				049F16422CC0E7950011414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 049F162A2CC0E7930011414A /* Project object */;
+}
