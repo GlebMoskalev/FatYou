@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		049D78BC2CC0F43700A234F8 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D78BB2CC0F43700A234F8 /* MainFlow.swift */; };
 		049D78BE2CC0F47200A234F8 /* FoodFiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D78BD2CC0F47200A234F8 /* FoodFiaryScreen.swift */; };
-		049D78C22CC101E400A234F8 /* CustomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D78C12CC101E400A234F8 /* CustomIcons.swift */; };
 		049F16362CC0E7930011414A /* FatYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F16352CC0E7930011414A /* FatYouApp.swift */; };
 		049F163A2CC0E7950011414A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049F16392CC0E7950011414A /* Assets.xcassets */; };
 		049F163D2CC0E7950011414A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049F163C2CC0E7950011414A /* Preview Assets.xcassets */; };
@@ -37,12 +36,13 @@
 		049F16772CC0EB250011414A /* MPLUSRounded1c-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16632CC0EB250011414A /* MPLUSRounded1c-Regular.ttf */; };
 		049F16782CC0EB250011414A /* MPLUSRounded1c-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049F16642CC0EB250011414A /* MPLUSRounded1c-Thin.ttf */; };
 		049F167A2CC0EC640011414A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F16792CC0EC640011414A /* CustomFonts.swift */; };
+		04D5A9EE2CC2636B00595D5C /* FoodDiaryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5A9ED2CC2636B00595D5C /* FoodDiaryFlow.swift */; };
+		04D5A9F02CC2638800595D5C /* StstisticsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5A9EF2CC2638800595D5C /* StstisticsFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		049D78BB2CC0F43700A234F8 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		049D78BD2CC0F47200A234F8 /* FoodFiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFiaryScreen.swift; sourceTree = "<group>"; };
-		049D78C12CC101E400A234F8 /* CustomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIcons.swift; sourceTree = "<group>"; };
 		049F16322CC0E7930011414A /* FatYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049F16352CC0E7930011414A /* FatYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatYouApp.swift; sourceTree = "<group>"; };
 		049F16392CC0E7950011414A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +72,8 @@
 		049F16632CC0EB250011414A /* MPLUSRounded1c-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Regular.ttf"; sourceTree = "<group>"; };
 		049F16642CC0EB250011414A /* MPLUSRounded1c-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Thin.ttf"; sourceTree = "<group>"; };
 		049F16792CC0EC640011414A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		04D5A9ED2CC2636B00595D5C /* FoodDiaryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiaryFlow.swift; sourceTree = "<group>"; };
+		04D5A9EF2CC2638800595D5C /* StstisticsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StstisticsFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				049D78BB2CC0F43700A234F8 /* MainFlow.swift */,
+				04D5A9ED2CC2636B00595D5C /* FoodDiaryFlow.swift */,
+				04D5A9EF2CC2638800595D5C /* StstisticsFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -123,14 +127,6 @@
 			children = (
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		049D78C02CC101C400A234F8 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				049D78C12CC101E400A234F8 /* CustomIcons.swift */,
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 		049F16292CC0E7930011414A = {
@@ -171,7 +167,6 @@
 		049F16432CC0E8870011414A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				049D78C02CC101C400A234F8 /* Icons */,
 				049F16462CC0E9F90011414A /* Fonts */,
 				049F16392CC0E7950011414A /* Assets.xcassets */,
 			);
@@ -345,10 +340,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				049F167A2CC0EC640011414A /* CustomFonts.swift in Sources */,
+				04D5A9F02CC2638800595D5C /* StstisticsFlow.swift in Sources */,
+				04D5A9EE2CC2636B00595D5C /* FoodDiaryFlow.swift in Sources */,
 				049F16362CC0E7930011414A /* FatYouApp.swift in Sources */,
 				049D78BC2CC0F43700A234F8 /* MainFlow.swift in Sources */,
 				049D78BE2CC0F47200A234F8 /* FoodFiaryScreen.swift in Sources */,
-				049D78C22CC101E400A234F8 /* CustomIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

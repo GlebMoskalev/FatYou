@@ -28,9 +28,9 @@ struct MainFlow: View {
     var body: some View {
         VStack(spacing: 0){
             TabView(selection: $currentTab){
-                Text("FOOD DIARY")
+                FoodDiaryFlow()
                     .tag(MainFlowTab.foodDiary)
-                Text("STATISTICS")
+                StstisticsFlow()
                     .tag(MainFlowTab.statisticts)
             }
             TabBar(currentTab: $currentTab, buttons: buttons)
@@ -56,33 +56,13 @@ private struct TabBar: View {
                     isTopTrailingCornerRadius: isTopTrailingCornerRadius,
                     action: {currentTab = button.tab})
             }
-//            TabBarButton(
-//                configuration: TabBarButtonConfiguration(
-//                    icon: .diary,
-//                    title: "FOOD DIARY",
-//                    tab: .foodDiary),
-//                style: .active,
-//                isTopLeadingCornerRadius: false,
-//                isTopTrailingCornerRadius: true, 
-//                action: {currentTab = .foodDiary}
-//            )
-//            TabBarButton(
-//                configuration: TabBarButtonConfiguration(
-//                    icon: .statistics,
-//                    title: "STATISTICS",
-//                    tab: .statisticts),
-//                style: .unactive,
-//                isTopLeadingCornerRadius: true,
-//                isTopTrailingCornerRadius: false,
-//                action: {currentTab = .statisticts}
-//            )
         }
     }
 }
 
 private struct TabBarButtonConfiguration: Identifiable{
     var id: MainFlowTab { tab}
-    let icon: CustomIcons
+    let icon: ImageResource
     let title: String
     let tab: MainFlowTab
 }
@@ -103,6 +83,7 @@ private struct TabBarButton: View {
     let action: () -> Void
     
     var body: some View {
+        let height = 56.0
         Button{
             action()
         } label: {
@@ -114,7 +95,7 @@ private struct TabBarButton: View {
                     .lineLimit(1)
             }
             .foregroundColor(style.foregroundColor)
-            .frame(maxWidth: .infinity, minHeight: 56, maxHeight: 56)
+            .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
             .background(style.backgroundColor)
             .clipShape(
                 UnevenRoundedRectangle(
@@ -125,7 +106,7 @@ private struct TabBarButton: View {
         }
         .background{
             Color(.warning)
-                .padding(.top, 56)
+                .padding(.top, height)
                 .ignoresSafeArea()
         }
     }
