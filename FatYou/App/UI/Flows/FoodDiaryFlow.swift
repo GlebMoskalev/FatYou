@@ -10,7 +10,8 @@ import SwiftUI
 struct FoodDiaryFlow: View {
     var body: some View {
         NavigationStack{
-            FoodFiaryScreen()        }
+            FoodFiaryScreen()
+        }
     }
 }
 

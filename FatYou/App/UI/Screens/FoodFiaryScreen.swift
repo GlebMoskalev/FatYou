@@ -14,9 +14,17 @@ struct FoodFiaryScreen: View {
                 CaloryInfo()
                     .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
                 LazyVStack (spacing: 0){
-                    Text("12")
+                    CaloryInfoRow()
+                    CaloryInfoRow()
+                    CaloryInfoRow()
+                    CaloryInfoRow()
+                    CaloryInfoRow()
                 }
-                .background(.white)
+                .background{
+                    Color(.white)
+                        .shadow(color: .shadow, radius: 12, y: 12)
+                }
+                
                 
                 GeometryReader { proxy in
                     Color.white.frame(height: proxy.bounds(of: .scrollView)?.height ?? 0)
@@ -120,7 +128,7 @@ private struct PacmanProgress: View {
         let headSize = 60.0
         let dotSize = 14.0
         let dotSpace = 5.0
-        let rightPadding = 20.0
+        
         GeometryReader { proxy in
             let minSize = headSize / 2
             let actualSize = (proxy.size.width - minSize) * percent
@@ -137,6 +145,31 @@ private struct PacmanProgress: View {
                 Image(.packmanHead)
             }.frame(maxWidth: .infinity, alignment: .trailing)
         }.frame(height: headSize)
+    }
+}
+
+private struct CaloryInfoRow: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack(spacing: 0){
+                Text("Fried eggs with ham, 2 eggs")
+                
+                Spacer()
+                
+                Text("235 cal")
+                    .padding(.trailing, 4)
+                
+                Image(.more)
+                    .foregroundStyle(.grayBg)
+            }
+            .customFont(.bodyText)
+            .foregroundStyle(.mainText)
+            .padding(.leading, 20)
+            .frame(height: 59)
+            
+            Divider()
+                .background(.grayBg)
+        }
     }
 }
 
