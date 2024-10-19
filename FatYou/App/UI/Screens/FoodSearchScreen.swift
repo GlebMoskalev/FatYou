@@ -7,16 +7,24 @@
 
 import SwiftUI
 
+enum FoodPath: Hashable{
+    case newFood
+}
+
 struct FoodSearchScreen: View {
     @State private var searchText = ""
+    @State private var navPath = [FoodPath]()
     let onClose: () -> Void
     
     var body: some View {
-        NavigationStack  {
+        
+        NavigationStack(path: $navPath) {
             ZStack {
                 SearchResultList()
-                SaveButtonView()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                SaveButtonView(action: {
+                    navPath.append(.newFood)
+                })
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.white)
@@ -53,7 +61,14 @@ struct FoodSearchScreen: View {
                 UINavigationBar.appearance().scrollEdgeAppearance = appearance
                 UINavigationBar.appearance().compactAppearance = appearance
                 UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
-        }
+            }.navigationDestination(for: FoodPath.self){ path in
+                switch path{
+                case .newFood:
+                    NewFoodScreen(onClose: {
+                        navPath.removeLast()
+                    })
+                }
+            }
         }
     }
 }
@@ -68,8 +83,8 @@ private struct SearchFieldView: View {
                 TextField("", text: $searchText, onEditingChanged: { isEditing in
                     isSearchTextFocused = isEditing
                 })
-                    .frame(idealWidth: 100000)
-                    .customFont(.inputText)
+                .frame(idealWidth: 100000)
+                .customFont(.inputText)
                 
                 Button{
                     searchText = ""
@@ -89,21 +104,22 @@ private struct SearchFieldView: View {
     }
 }
 
+
 private struct SaveButtonView: View {
+    let action: () -> Void
+    
     var body: some View {
         Button{
-            
+            action()
         } label: {
             Text("SAVE")
-                .customFont(.buttonText)
-                .foregroundColor(.white)
-                .padding([.top, .bottom], 15)
-                .frame(maxWidth: .infinity)
-                .background(.accent)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-        }.padding([.leading, .trailing], 16)
+        }
+        .buttonStyle(AccentButtonStyle())
+        .padding([.leading, .trailing], 16)
     }
 }
+
+
 
 private struct SearchResultList: View {
     @State var selectedRow: Int?
@@ -120,17 +136,17 @@ private struct SearchResultList: View {
                         caloryTitle: "100 g",
                         caloryAmount: "235 kcal"
                     )
-                        SearchResultRow(
-                            data: data,
-                            isSelected: isSelected,
-                            onSelect: {
-                                if selectedRow != row{
-                                    selectedRow = row
-                                } else{
-                                    selectedRow = nil
-                                }
+                    SearchResultRow(
+                        data: data,
+                        isSelected: isSelected,
+                        onSelect: {
+                            if selectedRow != row{
+                                selectedRow = row
+                            } else{
+                                selectedRow = nil
                             }
-                        )
+                        }
+                    )
                 }
                 GeometryReader { proxy in
                     Color.lightBg.frame(height: proxy.bounds(of: .scrollView)?.height ?? 0)
