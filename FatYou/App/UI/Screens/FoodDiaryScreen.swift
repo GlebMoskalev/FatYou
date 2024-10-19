@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import SwipeActions
 
-struct FoodFiaryScreen: View {
+struct FoodDiaryScreen: View {
     @State private var currentDate = Date.now
+    @State var isSearchFoodPresented = false
+    
     let dateFormatter: DateFormatter
      
     init() {
@@ -20,10 +23,34 @@ struct FoodFiaryScreen: View {
     var body: some View {
         ScrollView{
             VStack(spacing: 0){
-                CaloryInfo()
+                CaloryInfo(onAddFoodRecord: {
+                    isSearchFoodPresented = true
+                })
                     .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
                 LazyVStack (spacing: 0){
                     CaloryInfoRow()
+                        .addSwipeAction(edge: .trailing){
+                            HStack (spacing: 0){
+                                Button {
+                                    
+                                } label: {
+                                    Image(.edit)
+                                        .frame(width: 60, height: 60, alignment: .center)
+                                        .background(.warning)
+                                        .foregroundStyle(.white)
+                                }
+                                
+                                Button {
+                                    
+                                } label: {
+                                    Image(.trash)
+                                        .frame(width: 60, height: 60, alignment: .center)
+                                        .background(.accent)
+                                        .foregroundStyle(.white)
+                                }
+                            }
+
+                        }
                     CaloryInfoRow()
                     CaloryInfoRow()
                     CaloryInfoRow()
@@ -77,6 +104,9 @@ struct FoodFiaryScreen: View {
             UINavigationBar.appearance().compactAppearance = appearance
             UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
         }
+        .fullScreenCover(isPresented: $isSearchFoodPresented) {
+            FoodSearchScreen(onClose: {isSearchFoodPresented = false})
+        }
     }
     private func CurrentDayLabel() -> String {
         if Calendar.current.isDateInToday(currentDate){
@@ -91,6 +121,7 @@ struct FoodFiaryScreen: View {
 
 private struct CaloryInfo: View {
     @State private var isCollapsed = false
+    let onAddFoodRecord: () -> Void
     
     var body: some View {
         VStack(spacing: 0) {
@@ -112,9 +143,10 @@ private struct CaloryInfo: View {
                 .frame(minWidth: 100)
                 
                 Spacer()
+        
                 
                 Button {
-                    
+                    onAddFoodRecord()
                 } label: {
                     Text("Add Food")
                         .lineLimit(1)
@@ -197,6 +229,6 @@ private struct CaloryInfoRow: View {
 
 #Preview {
     NavigationStack{
-        FoodFiaryScreen()
+        FoodDiaryScreen()
     }
 }
